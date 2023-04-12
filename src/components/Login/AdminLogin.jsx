@@ -12,15 +12,15 @@ const AdminLogin = () => {
     <Grid className={styles.container}>
       <Background />
       <Grid className={styles.logincontainer} xs={8}>
-        <Grid className={styles.header} style={{textDecoration: 'none'}}>
+        <Grid className={styles.header} >
           <Typography variant="h6" fontWeight='bold' className={styles.admin} >
-            <Link to='/'  >
-            Admin
+            <Link to="/" style={{textDecoration: 'none'}} >
+              Admin
             </Link>
           </Typography>
           <Typography variant="h6" fontWeight='bold' className={styles.admin}>
-          <Link to='/customer' style={{textDecoration: 'none'}}>
-            Customer
+            <Link to="/customer" style={{textDecoration: 'none'}}>
+              Customer
             </Link>
           </Typography>
         </Grid>
@@ -46,7 +46,7 @@ const AdminLogin = () => {
           <Button size="large" variant="contained" >Login</Button>
         </Grid>
         <Typography variant="body">
-          Dont have account!<span> <Link>Signup</Link> </span>
+          Dont have account!<span> <Link to='/signup'>Signup</Link> </span>
         </Typography>
       </Grid>
     </Grid>

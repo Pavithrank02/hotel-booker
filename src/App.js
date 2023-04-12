@@ -1,12 +1,17 @@
 
 import './App.css';
-import Background from './components/Background/Background';
+import { Routes, Route } from 'react-router-dom';
+import CustomerLogin from './components/Login/CustomerLogin';
 import AdminLogin from './components/Login/AdminLogin';
 
 function App() {
   return (
     <div className="App">
-     <AdminLogin />
+      <Routes>
+        <Route path="/" element={<AdminLogin />} />
+        <Route path="/customer" element={<CustomerLogin />} />
+      </Routes>
+
     </div>
   );
 }

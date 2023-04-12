@@ -4,16 +4,23 @@ import TextField from '@mui/material/TextField';
 import Background from '../Background/Background'
 import styles from './AdminLogin.module.css'
 
-const AdminLogin = () => {
+const CustomerLogin = () => {
   const [showPassword, setShowPassword] = React.useState(false);
 
   return (
     <Grid className={styles.container}>
       <Background />
       <Grid className={styles.logincontainer} xs={8}>
-        <Grid>
-          <Typography variant="h4" component="h2">
-            Sign in your account!
+      <Grid className={styles.header} >
+          <Typography variant="h6" fontWeight='bold' className={styles.admin} >
+            <Link to="/" style={{textDecoration: 'none'}} >
+              Admin
+            </Link>
+          </Typography>
+          <Typography variant="h6" fontWeight='bold' className={styles.admin}>
+            <Link to="/customer" style={{textDecoration: 'none'}}>
+              Customer
+            </Link>
           </Typography>
         </Grid>
         <Typography variant="h4" component="h2">
@@ -45,4 +52,4 @@ const AdminLogin = () => {
   )
 }
 
-export default AdminLogin
+export default CustomerLogin
