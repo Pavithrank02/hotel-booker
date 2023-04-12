@@ -1,0 +1,13 @@
+.logincontainer{
+
+  background-color: rgba(255, 255, 255, 0.87);
+  height: 50vh;
+  width: 50vw;
+  border-radius: 20px;
+  box-shadow: 1rem -1rem 2rem 1rem rgb(182, 175, 175);
+  margin-top: 0;
+  align-items: center;
+  
+
+
+}
