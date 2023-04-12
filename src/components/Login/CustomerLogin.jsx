@@ -11,6 +11,11 @@ const AdminLogin = () => {
     <Grid className={styles.container}>
       <Background />
       <Grid className={styles.logincontainer} xs={8}>
+        <Grid>
+          <Typography variant="h4" component="h2">
+            Sign in your account!
+          </Typography>
+        </Grid>
         <Typography variant="h4" component="h2">
           Sign in your account!
         </Typography>
@@ -24,13 +29,13 @@ const AdminLogin = () => {
             variant="filled"
           />
           <TextField
-            className={styles.TextField} 
+            className={styles.TextField}
             label="Password"
             type="password"
             autoComplete="current-password"
             variant="filled"
           />
-           <Button size="large" variant="contained" >Login</Button>
+          <Button size="large" variant="contained" >Login</Button>
         </Grid>
         <Typography variant="body">
           Dont have account!<span> <Link>Signup</Link> </span>
