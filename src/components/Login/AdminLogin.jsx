@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import { Button, Grid, Typography } from '@mui/material'
 import TextField from '@mui/material/TextField';
 import Background from '../Background/Background'
@@ -46,7 +46,7 @@ const AdminLogin = () => {
           <Button size="large" variant="contained" >Login</Button>
         </Grid>
         <Typography variant="body">
-          Dont have account!<span> <Link to='/signup'>Signup</Link> </span>
+          Dont have account!<span> <Link to='/register'>Signup</Link> </span>
         </Typography>
       </Grid>
     </Grid>
